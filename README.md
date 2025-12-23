@@ -12,23 +12,39 @@ Fresh, Okay, or Spoiled categories.
 
 ## Status
 🚧 In progress
-# food-freshness-classifier
-AI-based food freshness and quality classification using deep learning
+# Food Freshness & Quality Classifier
+
+## Problem Statement
+Assessing food freshness manually is subjective and error-prone.
+This project uses deep learning and computer vision to automatically
+classify food images based on their freshness.
+
 ## Dataset
-Fruits Fresh and Rotten dataset sourced from Kaggle, containing images of fresh and spoiled fruits across multiple categories.
+The project uses the Fruits Fresh and Rotten dataset from Kaggle,
+which contains images of fresh and spoiled fruits across multiple categories.
 
 ## Methodology
-- Image preprocessing and augmentation
-- Transfer learning using MobileNetV2
-- Multi-class classification (6 classes)
-- Model fine-tuning for performance improvement
+- Image preprocessing and normalization
+- Data augmentation for robustness
+- Transfer learning using a pre-trained CNN
+- Multi-class image classification
+- Model fine-tuning to improve performance
+
+## Model Architecture
+MobileNetV2 was used as the base convolutional neural network.
+Custom fully connected layers were added on top, followed by a softmax
+output layer for multi-class classification.
 
 ## Results
-The final model achieved approximately 90–95% validation accuracy.
+The final trained model achieved approximately 90–95% validation accuracy
+on the test dataset.
 
 ## Evaluation
-Model performance was evaluated using accuracy plots, loss curves, and confusion matrix analysis.
+Model performance was evaluated using accuracy and loss curves,
+confusion matrix analysis, and visual inspection of sample images.
 
-## Sample Visualizations
-See the `results/` folder for dataset samples and prediction performance.
-
+## Tools & Technologies
+- Python
+- TensorFlow / Keras
+- Google Colab
+- GitHub
